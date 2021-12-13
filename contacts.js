@@ -1,6 +1,6 @@
 const fs= require ('fs/promises');
 const path = require ('path');
-const crypto = require ('crypto'); // модуль для шифрования данных. И тут есть генерация айдишников
+const crypto = require ('crypto'); // It's module for data encryption. And then there is the generation of IDs
 
 
  const contactsPath = path.join(__dirname, "/db", "contacts.json");
@@ -15,7 +15,6 @@ const readContent = async ()=> {
 
 const listContacts = async () => {
     return await readContent();
-    const result = contacts
   }
   
  const getContactById= async (contactId) => {
