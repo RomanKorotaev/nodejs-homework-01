@@ -7,8 +7,6 @@ const crypto = require ('crypto'); // модуль для шифрования �
  
 
 const readContent = async ()=> {
-    console.log ("Запущен readContent")
-    // const content = await fs.readFile (path.join(__dirname, 'db', 'contacts.json'), 'utf8');
     const content = await fs.readFile (contactsPath, 'utf8')
     const result = JSON.parse(content);
     return result;
@@ -16,7 +14,6 @@ const readContent = async ()=> {
 
 
 const listContacts = async () => {
-    // console.log ("Запущен listContacts")
     return await readContent();
     const result = contacts
   }
@@ -28,8 +25,13 @@ const listContacts = async () => {
     
   }
   
-  function removeContact(contactId) {
-    // ...твой код
+  const removeContact = async (contactId ) => {
+    const contacts = await readContent();
+    const updatedArray = contacts.filter ((contact)=> contact.id!==contactId)
+    await fs.writeFile (contactsPath, JSON.stringify (updatedArray, null, 2))
+
+    const removedContact = contacts.filter ((contact)=> contact.id===contactId)
+    return removedContact;
   }
   
   const addContact =  async (name, email, phone) => {
