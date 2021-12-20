@@ -13,5 +13,4 @@ const removeContact = async (contactId ) => {
     return removedContact;
   }
   
-  
 module.exports = {removeContact}

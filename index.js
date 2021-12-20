@@ -1,14 +1,5 @@
-// console.log ("Hello, World! :)")
-
 const chalk = require ('chalk')
 const { Command } = require('commander');
-
-// const {
-//     listContacts,
-//     getContactById,
-//     removeContact,
-//     addContact,
-// } = require ('./contacts.js');
 
 const {listContacts}= require ('./controllers/contacts/listContacts');
 const {getContactById}= require ('./controllers/contacts/getContactById');
