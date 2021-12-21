@@ -1,14 +1,11 @@
-// console.log ("Hello, World! :)")
-
 const chalk = require ('chalk')
 const { Command } = require('commander');
 
-const {
-    listContacts,
-    getContactById,
-    removeContact,
-    addContact,
-} = require ('./contacts.js')
+const {listContacts}= require ('./controllers/contacts/listContacts');
+const {getContactById}= require ('./controllers/contacts/getContactById');
+const {removeContact}= require ('./controllers/contacts/removeContact');
+const {addContact}= require ('./controllers/contacts/addContact.js');
+
 
 const program = new Command();
 program
@@ -59,4 +56,5 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 }
 
 
-invokeAction(argv).then( ()=> console.log ('Operation success'))
+// invokeAction(argv).then( ()=> console.log ('Operation success!'))
+(async()=>{ await invokeAction(argv) })()

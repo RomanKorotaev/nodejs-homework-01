@@ -30,22 +30,10 @@
     "phone": "(186) 568-3720"
   },
   {
-    "id": "7",
-    "name": "Reuben Henry",
-    "email": "pharetra.ut@dictum.co.uk",
-    "phone": "(715) 598-5792"
-  },
-  {
     "id": "8",
     "name": "Simon Morton",
     "email": "dui.Fusce.diam@Donec.com",
     "phone": "(233) 738-2360"
-  },
-  {
-    "id": "9",
-    "name": "Thomas Lucas",
-    "email": "nec@Nulla.com",
-    "phone": "(704) 398-7993"
   },
   {
     "id": "10",
@@ -54,9 +42,9 @@
     "phone": "(748) 206-2688"
   },
   {
-    "name": "Mango",
-    "email": "mango@gmail.com",
-    "phone": "322-22-22",
-    "id": "40137cff-9b91-492f-8d82-f3ef60adecd1"
+    "name": "Orlando",
+    "email": "orlando@gmail.com",
+    "phone": "446-22-62",
+    "id": "c961ed52-5072-4f15-bdd3-8524ff7fcaff"
   }
 ]
